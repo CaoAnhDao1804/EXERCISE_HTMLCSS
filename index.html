@@ -1,0 +1,681 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Project Bootstrap</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="row  header-top ">
+				<div class="col-lg-4 col-12 language ">
+					<div class="content">
+						<a>Tiếng Việt |</a>
+						<a> English </a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-12 menu">
+					<ul>
+						<li><a href="#">Home |</a></li>
+            <li><a href="#">Giới thiệu |</a></li>
+            <li><a href="#">Liên Hệ |	</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-12 contact"">
+        	<div class="row">
+        		<div class="col-md-6 col-6">
+          			<form class="navbar-form" role="search">
+          					<div class="input-group">
+          							<div class="input-group-btn">
+          								<button class="btn btn-default" type="submit">
+          									<i class="glyphicon glyphicon-search"></i>
+          								</button>
+          							</div>
+          							<input type="text" class="form-control" placeholder="Search" name="q">
+          					</div>
+          			</form>
+        		</div>
+						<div class="col-md-6 col-6 contact">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hotline <b class="caret"></b></a>
+                       <ul class="dropdown-menu">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                        </ul>
+       				</div>
+        	</div>
+        </div>
+      </div>
+<!--   </div>
+ -->
+      <div class="row header-title">
+        <img class="imgcustom" src="img/logo.png" />
+					<div class="menu ">
+                    <ul class="nav justify-content-center">
+							        		<li ><a href="#">TRANG CHỦ  </a></li>
+                          <li><a href="#">GIỚI THIỆU </a></li>
+                          <li><a href="#">DU HỌC 	</a></li>
+                          <li><a href="#">ANH NGỮ</a></li>
+                          <li><a href="#">TIN TỨC</a></li>
+                          <li><a href="#">LỊCH SỰ KIỆN</a></li>
+                          <li><a href="#">LIÊN HỆ</a></li><li>
+                          <li><a href="#">ĐĂNG KÝ HỘI THẢO</a></li>
+							      </ul>
+                </div>
+          </div>
+      </div>
+        <div class="slideshow-container">
+
+				  <div class="mySlides fade">
+				    <div class="numbertext">1 / 3</div>
+				    <img src="img/slide.png" style="width:100%">
+				    <div class="text">Caption Text</div>
+				  </div>
+
+				  <div class="mySlides fade">
+				    <div class="numbertext">2 / 3</div>
+				    <img src="img/slide.png" style="width:100%">
+				    <div class="text">Caption Two</div>
+				  </div>
+
+				  <div class="mySlides fade">
+				    <div class="numbertext">3 / 3</div>
+				    <img src="img/slide.png" style="width:100%">
+				    <div class="text">Caption Three</div>
+				  </div>
+				  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span>
+				  <span class="dot" onclick="currentSlide(2)"></span>
+				  <span class="dot" onclick="currentSlide(3)"></span>
+				</div>
+				</div>
+
+<!-- The dots/circles -->
+
+
+ </header>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<div class="contentnews">
+	<section class="section main-content">
+<h3 class="section-title h2">TIN TỨC</h3>
+
+<div class="row newstitle" >
+
+	<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                  <article class="entry">
+                    <div class="entry__img-holder">
+                      <a href="single-post.html">
+                        <div class="thumb-container thumb-60">
+                          <img data-src="img/blog/post_3.jpg" src="img/schoolcurtin.png" class="entry__img lazyloaded" alt="">
+                        </div>
+                      </a>
+                    </div>
+                    <div class="entry__body">
+                      <div class="entry__header">
+                        <h2 class="entry__title">
+                          <a class = "news"  href="single-post.html">Cơ hội học bổng của trường Curting Singapore Năm 2015</a>
+                        </h2>
+                      </div>
+                    </div>
+                  </article>
+   </div>
+   <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                  <article class="entry">
+                    <div class="entry__img-holder">
+                      <a href="single-post.html">
+                        <div class="thumb-container thumb-60">
+                          <img data-src="img/blog/post_3.jpg" src="img/schoolcurtin.png" class="entry__img lazyloaded" alt="">
+                        </div>
+                      </a>
+                    </div>
+                    <div class="entry__body">
+                      <div class="entry__header">
+                        <h2 class="entry__title">
+                          <a class = "news"  href="single-post.html">Cùng StudyLink tham gia hội thảo du học nhận học bổng du học tại trường...</a>
+                        </h2>
+                      </div>
+                    </div>
+                  </article>
+   </div>
+   <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                  <article class="entry">
+                    <div class="entry__img-holder">
+                      <a href="single-post.html">
+                        <div class="thumb-container thumb-60">
+                          <img data-src="img/blog/post_3.jpg" src="img/duhocuc.png" class="entry__img lazyloaded" alt="">
+                        </div>
+                      </a>
+                    </div>
+                    <div class="entry__body">
+                      <div class="entry__header">
+                        <h2 class="entry__title">
+                          <a  class = "news"  href="single-post.html">Úc mở cửa Visa cho các du học sinh diện nghề.</a>
+                        </h2>
+                      </div>
+                    </div>
+                  </article>
+   </div>
+   <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                  <article class="entry">
+                    <div class="entry__img-holder">
+                      <a class = "news"  href="single-post.html">
+                        <div class="thumb-container thumb-60">
+                          <img data-src="img/blog/post_3.jpg" src="img/presentation.png" class="entry__img lazyloaded" alt="">
+                        </div>
+                      </a>
+                    </div>
+                    <div class="entry__body">
+                      <div class="entry__header">
+                        <h2 class="entry__title">
+                          <a class = "news" href="single-post.html">Tuần lễ du học - Cánh cửa mở đến tương lai</a>
+                        </h2>
+                      </div>
+                    </div>
+                  </article>
+   </div>
+</div>
+<div class="row event" style="border-top: 1px  solid;">
+	<div class="col-lg-3 col-md-3 col-sm-12">
+	<h3 class="section-title h2">LỊCH SỰ KIỆN</h3>
+		<div class="row scheduleevent">
+				<div class="col-lg-3 col-sm-4 col-xs-4 calendar">
+					<img src="img/calendar.png" style="width:100%">
+
+				</div>
+				<div class="col-lg-9 col-sm-8 col-xs-8 detail">
+					<div class="row ">
+						<h6 class="detailcontent">
+							Lorem ipsum dolor sit amet, consectetur adipisicin
+						</h6>
+					</div>
+					<div class="row time">
+
+						<i class="col-lg-2 col-sm-4 far fa-clock "></i>
+						<p class="col-lg-10 col-sm-8time"> 4:00 -9:00 pm</p>
+					</div>
+
+					</div>
+		</div>
+		<div class="row scheduleevent">
+				<div class="col-lg-3 col-sm-4 col-xs-4 calendar">
+					<img src="img/calendar.png" style="width:100%">
+
+				</div>
+				<div class="col-lg-9 col-sm-8 col-xs-8 detail">
+					<div class="row ">
+						<h6 class="detailcontent">
+							Lorem ipsum dolor sit amet, consectetur adipisicin
+						</h6>
+					</div>
+					<div class="row time">
+
+						<i class="col-lg-2 col-sm-4 far fa-clock "></i>
+						<p class="col-lg-10 col-sm-8time"> 4:00 -9:00 pm</p>
+					</div>
+
+					</div>
+		</div>
+		<div class="row scheduleevent">
+				<div class="col-lg-3 col-sm-4 col-xs-4 calendar">
+					<img src="img/calendar.png" style="width:100%">
+
+				</div>
+				<div class="col-lg-9 col-sm-8 col-xs-8 detail">
+					<div class="row ">
+						<h6 class="detailcontent">
+							Lorem ipsum dolor sit amet, consectetur adipisicin
+						</h6>
+					</div>
+					<div class="row time">
+
+						<i class="col-lg-2 col-sm-4 far fa-clock "></i>
+						<p class="col-lg-10 col-sm-8time"> 4:00 -9:00 pm</p>
+					</div>
+
+					</div>
+		</div>
+
+	</div>
+
+	<div class="col-lg-9">
+		<h3 class="section-title h2">DU HỌC</h3>
+		<div class="col-lg-4 col-xs-12">
+			<div class="row">
+				<div class="container">
+				  <img src="img/uc.png" alt="Nature" style="width:100%;">
+				  <div class="text-block" style="background-color: #e05212;">
+				    <p > DU HỌC ÚC</p>
+				  </div>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="container">
+				  <img src="img/uc.png" alt="Nature" style="width:100%;">
+				  <div class="text-block" style="background-color: #540808;">
+				    <p > DU HỌC CANADA</p>
+				  </div>
+				</div>
+
+			</div>
+
+		</div>
+		<div class="col-lg-4 col-xs-12">
+			<div class="row">
+				<div class="container">
+				  <img src="img/newzealand.png" alt="Nature" style="width:100%;">
+				  <div class="text-block" style="background-color: #4379d4;">
+				   <p > DU HỌC NEWZEALAND</p>
+				  </div>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="container">
+				  <img src="img/uc.png" alt="Nature" style="width:100%;">
+				  <div class="text-block" style="background-color: #8eaf1e;">
+				    <p > DU HỌC ANH</p>
+				  </div>
+				</div>
+
+			</div>
+
+		</div>
+		<div class="col-lg-4 col-xs-12">
+			<div class="row">
+				<div class="container">
+				  <img src="img/uc.png" alt="Nature" style="width:100%;">
+				  <div class="text-block" style="background-color: #ebc;">
+				   <p > DU HỌC MỸ</p>
+				  </div>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="container">
+				  <img src="img/uc.png" alt="Nature" style="width:100%;">
+				  <div class="text-block"  style="background-color: #ebc;">
+				    <p> DU HỌC SINGAPORE</p>
+				  </div>
+				</div>
+
+			</div>
+
+		</div>
+
+		</div>
+	</div>
+<div class="row support">
+	<div class="col-lg-4 boxtext" style="">
+			<h3 style="padding-top: 20px; text-decoration: underline; " >CÂU HỎI THƯỜNG GẶP</h3>
+		<P> CÁC CÂU HỎI THƯỜNG GẶP</P>
+
+
+	</div>
+	<div class="col-lg-4 boxtext" style="background-color: #8B0000; ">
+		<h3 style="padding-top: 20px;  text-decoration: underline;">CÂU HỎI THƯỜNG GẶP</h3>
+		<p>CÁC CÂU HỎI THƯỜNG GẶP</p>
+	</div>
+	<div class="col-lg-4 boxtext" style="background-color: #2F4F4F;">
+		<h3 style="padding-top: 20px; text-decoration: underline;" >CÂU HỎI THƯỜNG GẶP</h3>
+		<P> CÁC CÂU HỎI THƯỜNG GẶP</P>
+	</div>
+
+	</div>
+	<div class="gachtext">
+      <span class="tieudegachngang">
+        Ý KIẾN KHÁCH HÀNG & BẢO TRỢ THÔNG TIN
+      </span>
+  </div>
+  <div class="row">
+		<div class="col-lg-3 col-xs-6">
+			<p class="speech">I really like the scholaship.</p>
+			<br>
+			<br>
+			<div class="row ">
+				<div class="col-sm-4">
+						<img src="img/uc.png"  style="width: 100%;" alt="">
+
+				</div>
+				<div class="col-sm-8">
+					<p class="text-left className">
+              <strong> Nguyễn Phương Tú</strong>
+          </p>
+          <small>Profile aboout job and life </small>
+				</div>
+
+			</div>
+		</div>
+		<div class="col-lg-3 col-xs-6">
+			<p class="speech">I really like the scholaship.</p>
+			<br>
+			<br>
+			<div class="row ">
+				<div class="col-sm-4">
+						<img src="img/uc.png"  style="width: 100%;" alt="">
+
+				</div>
+				<div class="col-sm-8">
+					<p class="text-left className">
+              <strong> Nguyễn Phương Tú</strong>
+          </p>
+          <small>Profile aboout job and life </small>
+				</div>
+
+			</div>
+		</div>
+		<div class="col-lg-3 col-xs-6">
+			<p class="speech">I really like the scholaship.</p>
+			<br>
+			<br>
+			<div class="row ">
+				<div class="col-sm-4">
+						<img src="img/uc.png"  style="width: 100%;" alt="">
+
+				</div>
+				<div class="col-sm-8">
+					<p class="text-left className">
+              <strong> Nguyễn Phương Tú</strong>
+          </p>
+          <small>Profile aboout job and life </small>
+				</div>
+
+			</div>
+		</div>
+		<div class="col-lg-3 col-xs-6">
+			<p class="speech">I really like the scholaship.</p>
+			<br>
+			<br>
+			<div class="row ">
+				<div class="col-sm-4">
+						<img src="img/uc.png"  style="width: 100%;" alt="">
+
+				</div>
+				<div class="col-sm-8">
+					<p class="text-left className">
+              <strong> Nguyễn Phương Tú</strong>
+          </p>
+          <small>Profile aboout job and life </small>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="gachtext">
+      <span class="tieudegachngang">
+        ĐƠN VỊ BẢO TRỢ THÔNG TIN
+      </span>
+  </div>
+ 	<div class="row">
+ 			<div class="col-lg-4">
+						<img src="img/logotuoitre.png"  style="width: 70%;" alt="">
+
+			</div>
+
+			<div class="col-lg-4">
+						<img src="img/logosaigontimes.png"  style="width: 70%; padding-top: 50px;" alt="">
+
+			</div>
+
+			<div class="col-lg-4">
+						<img src="img/logotuoitre.png"  style="width: 70%;" alt="">
+
+			</div>
+ </div>
+
+
+ </div>
+
+</div>
+
+ <div class="footer">
+ 	<div class="media-container-row content" style="background-color: #232121">
+		<div class="contentnews">
+			<div class="row">
+				<div class="col-xs-12 col-sm-3 col-md-3">
+
+                	<ul class="list-unstyled quick-links">
+                		<li><i class="fas fa-square" style="font-size: 6px; color: white;	"></i> <a href="#" class="text-black">Du học</a></li> <br>
+                		<li><i class="fas fa-square" style="font-size: 6px;  color: white;"></i> <a href="#" class="text-black">Anh Ngữ</a></li><br>
+                		<li><i class="fas fa-square" style="font-size: 6px;  color: white;"></i> <a href="#" class="text-black">Chương trình</a></li><br>
+                		<li><i class="fas fa-square" style="font-size: 6px;  color: white;"></i> <a href="#" class="text-black">Liên kết</a></li><br>
+                		<li><i class="fas fa-square" style="font-size: 6px;  color: white;"></i> <a href="#" class="text-black">Bài viết</a></li>
+
+                	</ul>
+        </div>
+
+        <div class="col-xs-12 col-sm-3 col-md-3">
+
+                	<ul class="list-unstyled quick-links">
+                		<li><i class="fas fa-square" style="font-size: 6px;  color: white;"></i> <a href="#" class="text-black">Home</a></li> <br>
+                		<li><i class="fas fa-square"  style="font-size: 6px;  color: white;"></i> <a href="#" class="text-black">Giới thiệu</a></li><br>
+                		<li><i class="fas fa-square" style="font-size: 6px;  color: white;"></i> <a href="#" class="text-black">Liên hệ</a></li><br>
+                		<li><i class="fas fa-square" style="font-size: 6px;  color: white;"></i> <a href="#" class="text-black">Tuyển dụng</a></li><br>
+
+                	</ul>
+        </div>
+
+         <div class="col-xs-12 col-sm-3 col-md-3">
+                <p class="mb-4 mbr-fonts-style foot-title display-7">
+                    SUBSCRIBE
+                </p>
+                <p class="mbr-text form-text mbr-fonts-style display-7">
+                    Signing up for our email updates with exciting offers and events from StudyLink
+                </p>
+                <div class="media-container-column" data-form-type="formoid">
+
+                    <form class="form-inline" action="" method="post" data-form-title="Mobirise Form">
+                        <div class="form-group">
+                        			<span>
+   																 <i class="	fa fa-envelope-o" aria-hidden="true"></i>
+  														</span>
+                            <input type="email" class="form-control input-sm input-inverse my-2 mailinput" name="email" required="" data-form-field="Email" placeholder="Your Email" id="email-footer3-3h">
+
+                        </div>
+                        <div class="input-group-btn m-2">
+                            <button href="" class="btn btn-dark btnSend " type="submit">Send<i class="fa fa-paper-plane-o"></i></button>
+                        </div>
+                    </form>
+                </div>
+         </div>
+
+         <div class="col-xs-12 col-sm-3 col-md-3" style="text-align: right;">
+                <p class="">
+                    Copyrights2014 STUDYLINK.ORG
+                </p>
+                <p class="">
+                    Alrights reserved
+                </p>
+                <p class="">
+                    FOLLOW  US ON
+                </p>
+                <p class="">
+									  <i class="fa fa-facebook"> </i> facebook.com/studylink
+                </p>
+         </div>
+
+      </div>
+			<div class="row">
+				<div class="col-lg-6 col-sm-12">
+					 <ul class="nav nav-tabs">
+				    <li  class="active tabmenu" ><a class="tab" data-toggle="tab" href="#home">HCM</a></li>
+				    <li class="tabmenu"><a class="tab" data-toggle="tab" href="#menu1">Hà Nội</a></li>
+				    <li class="tabmenu"><a  class="tab" data-toggle="tab" href="#menu2">Đà Nẵng</a></li>
+				    <li class="tabmenu"><a class="tab" data-toggle="tab" href="#menu3">Melbourne</a></li>
+				    <li class="tabmenu"><a class="tab" data-toggle="tab" href="#menu4">Adelaide</a></li>
+				  </ul>
+
+				  <div class="tab-content">
+				    <div id="home" class="tab-pane fade in active">
+				      <h5>219 Bis Nguyễn Thị Minh Khai, Quận 1, Tp. HCM, Việt Nam</h5>
+				      <div class="row">
+				      	<div class="col-lg-4">
+				      		<i class="fas fa-phone"></i>
+				      		0809765456
+				      	</div>
+				      	<div class="col-lg-4">
+				      		<i class="fas fa-phone"></i>
+				      		0809765456
+				      	</div>
+				      	<div class="col-lg-4">
+				      		<i class="fas fa-phone"></i>
+				      		0809765456
+				      	</div>
+
+				      </div>
+				    </div>
+				    <div id="menu1" class="tab-pane fade">
+				      <h5>219 Bis Nguyễn Thị Minh Khai, Quận 1, Tp. HCM, Việt Nam</h5>
+				      <div class="row">
+				      	<div class="col-lg-4">
+				      		<i class="fas fa-phone"></i>
+				      		0809765456
+				      	</div>
+				      	<div class="col-lg-4">
+				      		<i class="fas fa-phone"></i>
+				      		0809765456
+				      	</div>
+				      	<div class="col-lg-4">
+				      		<i class="fas fa-phone"></i>
+				      		0809765456
+				      	</div>
+
+				      </div>
+				    </div>
+				    <div id="menu2" class="tab-pane fade">
+				      <h5>219 Bis Nguyễn Thị Minh Khai, Quận 1, Tp. HCM, Việt Nam</h5>
+				      <div class="row">
+				      	<div class="col-lg-4">
+				      		<i class="fas fa-phone"></i>
+				      		0809765456
+				      	</div>
+				      	<div class="col-lg-4">
+				      		<i class="fas fa-phone"></i>
+				      		0809765456
+				      	</div>
+				      	<div class="col-lg-4">
+				      		<i class="fas fa-phone"></i>
+				      		0809765456
+				      	</div>
+
+				      </div>
+				    </div>
+				    <div id="menu3" class="tab-pane fade">
+				      <h5>219 Bis Nguyễn Thị Minh Khai, Quận 1, Tp. HCM, Việt Nam</h5>
+				      <div class="row">
+				      	<div class="col-lg-4">
+				      		<i class="fas fa-phone"></i>
+				      		0809765456
+				      	</div>
+				      	<div class="col-lg-4">
+				      		<i class="fas fa-phone"></i>
+				      		0809765456
+				      	</div>
+				      	<div class="col-lg-4">
+				      		<i class="fas fa-phone"></i>
+				      		0809765456
+				      	</div>
+
+				      </div>
+				    </div>
+				    <div id="menu4" class="tab-pane fade">
+				      <h5>219 Bis Nguyễn Thị Minh Khai, Quận 1, Tp. HCM, Việt Nam</h5>
+				      <div class="row">
+				      	<div class="col-lg-4">
+				      		<i class="fas fa-phone"></i>
+				      		0809765456
+				      	</div>
+				      	<div class="col-lg-4">
+				      		<i class="fas fa-phone"></i>
+				      		0809765456
+				      	</div>
+				      	<div class="col-lg-4">
+				      		<i class="fas fa-phone"></i>
+				      		0809765456
+				      	</div>
+
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<div class="col-lg-6" >
+					<img class="bottom-right" src="img/logo.png" alt="">
+
+				</div>
+			</div>
+
+
+
+			</div>
+
+
+</div>
+
+ </div>
+
+ </div>
+	</div>
+
+	</div>
+ </div>
+
+	</div>
+
+
+	</div>
+
+
+
+
+</div>
+
+</div>
+</section>
+</section>
+</div>
+
+
+
+
+ <footer>
+ <!-- nội dung phần footer-->
+ </footer>
+ </div>
